@@ -35,10 +35,8 @@ namespace Credit_card
 
                     Console.Write("\nInput the number of the credit card: ");
                     input = Console.ReadLine();
-                    numbers = decimal.Parse(input);
-                    char[] quantity = input.ToCharArray();
 
-                    if (quantity.Length == correctQuantity.Length)
+                    if (input.Length == 12)
                     {
                         Console.Write("OK");
 
@@ -47,8 +45,7 @@ namespace Credit_card
                     {
                         Console.Write("\nQuantity of numbers incorrect.");
 
-                    }
-                    
+                    }                    
                 }
                 catch (FormatException ex)
                 {
