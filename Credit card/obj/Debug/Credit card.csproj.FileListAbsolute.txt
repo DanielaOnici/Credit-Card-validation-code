@@ -1,0 +1,7 @@
+C:\Users\danie\projects\Credit card\Credit card\bin\Debug\Credit card.exe.config
+C:\Users\danie\projects\Credit card\Credit card\bin\Debug\Credit card.exe
+C:\Users\danie\projects\Credit card\Credit card\bin\Debug\Credit card.pdb
+C:\Users\danie\projects\Credit card\Credit card\obj\Debug\Credit card.csproj.AssemblyReference.cache
+C:\Users\danie\projects\Credit card\Credit card\obj\Debug\Credit card.csproj.CoreCompileInputs.cache
+C:\Users\danie\projects\Credit card\Credit card\obj\Debug\Credit card.exe
+C:\Users\danie\projects\Credit card\Credit card\obj\Debug\Credit card.pdb

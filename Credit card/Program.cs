@@ -8,19 +8,49 @@ namespace Credit_card
 {
     class Program
     {
+        public static string ReverseString(string s)
+        {
+            char[] backwards = s.ToCharArray();
+            Array.Reverse(backwards);
+            return new string(backwards);
+        }
+
         static void Main(string[] args)
         {
-            string name;
+            string name, backwards, input;
+            decimal numbers, i;
             bool keepGoing = true;
+
+            decimal[] correctQuantity = new decimal[12];
+
+            Console.Write("\nInput your full name: ");
+            name = Console.ReadLine();
+            backwards = ReverseString(name);
+            Console.Write("Reverse name: {0}", backwards);
 
             do
             {
                 try
                 {
-                    Console.Write("\nInput your full name: ");
-                    name = Console.ReadLine();
+                    Console.Write("\nInput the number of the credit card: ");
+                    input = Console.ReadLine();
+                    numbers = decimal.Parse(input);
+                    char[] quantity = input.ToCharArray();
 
-
+                    for (i = 0; i < quantity.Length; i++)
+                    {
+                        if (quantity.Length == correctQuantity.Length)
+                        {
+                            Console.Write("OK");
+                            break;
+                        }
+                        else
+                        {
+                            Console.Write("\nQuantity of numbers incorrect.");
+                            break;
+                        }
+                    }
+                    break;
                 }
                 catch (FormatException ex)
                 {
@@ -32,7 +62,7 @@ namespace Credit_card
                 }
             } while (keepGoing);
 
-       
+            Console.ReadKey();
 
         }
     }
