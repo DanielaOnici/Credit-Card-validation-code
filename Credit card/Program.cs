@@ -32,25 +32,23 @@ namespace Credit_card
             {
                 try
                 {
+
                     Console.Write("\nInput the number of the credit card: ");
                     input = Console.ReadLine();
                     numbers = decimal.Parse(input);
                     char[] quantity = input.ToCharArray();
 
-                    for (i = 0; i < quantity.Length; i++)
+                    if (quantity.Length == correctQuantity.Length)
                     {
-                        if (quantity.Length == correctQuantity.Length)
-                        {
-                            Console.Write("OK");
-                            break;
-                        }
-                        else
-                        {
-                            Console.Write("\nQuantity of numbers incorrect.");
-                            break;
-                        }
+                        Console.Write("OK");
+
                     }
-                    break;
+                    else
+                    {
+                        Console.Write("\nQuantity of numbers incorrect.");
+
+                    }
+                    
                 }
                 catch (FormatException ex)
                 {
